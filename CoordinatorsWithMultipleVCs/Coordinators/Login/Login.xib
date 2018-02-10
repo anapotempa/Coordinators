@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Sample" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="hoX-Pv-T3f" id="CKo-el-kCA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hoX-Pv-T3f">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LoginViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4B-WE-7pg">
+                    <rect key="frame" x="110.5" y="323" width="154" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBm-Sv-2hd">
+                    <rect key="frame" x="110.5" y="392" width="154" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Go to App"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="lbe-Kh-7FG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="e4B-WE-7pg" firstAttribute="centerX" secondItem="hoX-Pv-T3f" secondAttribute="centerX" id="4gW-fg-zpG"/>
+                <constraint firstItem="OBm-Sv-2hd" firstAttribute="top" secondItem="e4B-WE-7pg" secondAttribute="bottom" constant="48" id="4xl-po-EjK"/>
+                <constraint firstItem="e4B-WE-7pg" firstAttribute="centerY" secondItem="hoX-Pv-T3f" secondAttribute="centerY" id="9VN-L8-KJi"/>
+                <constraint firstItem="OBm-Sv-2hd" firstAttribute="trailing" secondItem="e4B-WE-7pg" secondAttribute="trailing" id="Dfl-kr-Im2"/>
+                <constraint firstItem="OBm-Sv-2hd" firstAttribute="leading" secondItem="e4B-WE-7pg" secondAttribute="leading" id="uyr-N2-ZSC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="5qM-tF-RAW"/>
+            <point key="canvasLocation" x="-2" y="-22"/>
+        </view>
+    </objects>
+</document>

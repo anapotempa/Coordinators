@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthenticationViewController" customModule="Sample" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Rhy-5v-Ib7" id="dNm-jV-phw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rhy-5v-Ib7">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AuthenticationViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJ7-Ec-tgU">
+                    <rect key="frame" x="76" y="323.5" width="223" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="j4H-5i-4fC">
+                    <rect key="frame" x="76" y="388" width="223" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWH-h7-Bsv">
+                            <rect key="frame" x="0.0" y="0.0" width="111.5" height="40"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="0Qk-F8-aNv"/>
+                            </constraints>
+                            <state key="normal" title="Login"/>
+                            <connections>
+                                <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="eO7-RV-ZaM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbj-dP-1JU">
+                            <rect key="frame" x="111.5" y="0.0" width="111.5" height="40"/>
+                            <state key="normal" title="Sign up"/>
+                            <connections>
+                                <action selector="signupButtonTapped:" destination="-1" eventType="touchUpInside" id="wFJ-bZ-mNI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="j4H-5i-4fC" firstAttribute="leading" secondItem="OJ7-Ec-tgU" secondAttribute="leading" id="0fs-Tf-tMa"/>
+                <constraint firstItem="j4H-5i-4fC" firstAttribute="top" secondItem="OJ7-Ec-tgU" secondAttribute="bottom" constant="44" id="1gb-up-m10"/>
+                <constraint firstItem="j4H-5i-4fC" firstAttribute="trailing" secondItem="OJ7-Ec-tgU" secondAttribute="trailing" id="6gd-K2-3hT"/>
+                <constraint firstItem="OJ7-Ec-tgU" firstAttribute="centerX" secondItem="Rhy-5v-Ib7" secondAttribute="centerX" id="Mbz-UO-Uoo"/>
+                <constraint firstItem="OJ7-Ec-tgU" firstAttribute="centerY" secondItem="Rhy-5v-Ib7" secondAttribute="centerY" id="yux-Yu-dUX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="MmY-4J-c7u"/>
+            <point key="canvasLocation" x="57" y="-37"/>
+        </view>
+    </objects>
+</document>

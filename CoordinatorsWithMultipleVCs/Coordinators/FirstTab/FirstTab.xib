@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstTabViewController" customModule="Sample" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Urk-iJ-cyW" id="zIJ-kY-2SN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Urk-iJ-cyW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstTabViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9h-gp-NaG">
+                    <rect key="frame" x="101.5" y="323" width="172" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q08-0X-bif">
+                    <rect key="frame" x="101.5" y="372" width="172" height="30"/>
+                    <state key="normal" title="Logout"/>
+                    <connections>
+                        <action selector="logoutTapped:" destination="-1" eventType="touchUpInside" id="4oJ-9L-N8w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="q08-0X-bif" firstAttribute="trailing" secondItem="z9h-gp-NaG" secondAttribute="trailing" id="8WI-JC-53E"/>
+                <constraint firstItem="z9h-gp-NaG" firstAttribute="centerY" secondItem="Urk-iJ-cyW" secondAttribute="centerY" id="Euh-3K-Xh6"/>
+                <constraint firstItem="q08-0X-bif" firstAttribute="leading" secondItem="z9h-gp-NaG" secondAttribute="leading" id="kk6-Zr-PIa"/>
+                <constraint firstItem="q08-0X-bif" firstAttribute="top" secondItem="z9h-gp-NaG" secondAttribute="bottom" constant="28" id="rVO-6w-xhf"/>
+                <constraint firstItem="z9h-gp-NaG" firstAttribute="centerX" secondItem="Urk-iJ-cyW" secondAttribute="centerX" id="xld-II-qD5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="dSb-qw-MkZ"/>
+            <point key="canvasLocation" x="33" y="4"/>
+        </view>
+    </objects>
+</document>
